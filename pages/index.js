@@ -1,13 +1,13 @@
-
+import { Fragment } from 'react'
 import Charts from '../components/Charts';
 import Summary from '../components/Summary';
 
 const Home = ({data, timeline, world,top}) => {
   return (
-    <>
+    <Fragment>
       <Summary data={data}  />
       <Charts timeline={timeline} philippines={data} world={world} top={top.data}/>
-    </>
+    </Fragment>
   )
 }
 

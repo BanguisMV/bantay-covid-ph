@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Fragment } from 'react'
 import Nav from '../components/Nav';
 import { Container, Spinner, Footer } from '../components/styled/root'
 import '../styles/global.css'
@@ -13,20 +13,20 @@ const SEO = {
   canonical: 'https://covid.banguismv.wtf/',
     images: [
         {
-            url: 'https://covid.banguismv.wtf/no-virus.png',
+            url: 'https://covid.banguismv.wtf/free.jpg',
             alt: 'Bantay COVID',
           },
           {
-            url: 'https://covid.banguismv.wtf/no-virus.png',
+            url: 'https://covid.banguismv.wtf/free.jpg',
             alt: 'Bantay COVID',
           },
-          { url: 'https://covid.banguismv.wtf/no-virus.png' },
-          { url: 'https://covid.banguismv.wtf/no-virus.png' },
+          { url: 'https://covid.banguismv.wtf/free.jpg' },
+          { url: 'https://covid.banguismv.wtf/free.jpg' },
     ],
       twitter: {
         handle: '@handle',
         site: 'https://covid.banguismv.wtf',
-        cardType: 'https://covid.banguismv.wtf/no-virus.png',
+        cardType: 'https://covid.banguismv.wtf/free.jpg',
   }
 }
 
@@ -39,24 +39,27 @@ const MyApp = ({ Component, pageProps }) => {
     },800)
   },[])
   return (
-    <>
+    <Fragment>
      <NextSeo
       title="Bantay COVID"
       description="My simple Next JS app using chart.js and disease.sh API"
       openGraph={SEO}
     />
-      <Nav />
-      <Container>
-        {loading ? 
-          <Spinner><div className='loader'></div></Spinner> 
-            : 
-          <Component {...pageProps} /> 
-        }
-      </Container>
-      <Footer  className='footer'>
-       <a href="https://github.com/BanguisMV" target='_blank'> &copy;  BanguisMV </a>
-      </Footer >
-    </>
+    { loading ? 
+          <Spinner><div className='loader'></div></Spinner>  : 
+          <Fragment>
+            <Nav />
+
+            <Container>
+                <Component {...pageProps} /> 
+            </Container>
+
+            <Footer  className='footer'>
+              <a href="https://github.com/BanguisMV" target='_blank'> &copy;  BanguisMV </a>
+            </Footer > 
+          </Fragment>
+      }
+    </Fragment>
   
   )
 }

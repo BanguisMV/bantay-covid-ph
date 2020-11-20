@@ -16,13 +16,14 @@ export const Summary = styled.div`
     box-shadow: 0px 0px 2px 0px rgba(117,121,231,0.50);  
     padding:1rem;
     border-radius:5px;
+
     span {
         align-self:center;
         font-size: 3rem; 
-        margin-right:2rem;
-        padding:1rem;
+        margin:0 1rem;
+        padding: 1rem;
         background-color:var(--primary) !important;
-        border-radius:5px;
+        border-radius:3px;
         color:var(--white);
     }
 
@@ -37,16 +38,8 @@ export const Summary = styled.div`
             font-size: 1.3rem; 
         }
     }
-    
+}
 
-  
-}
-.Unstable {
-    text-align:center;
-    font-size: 1.1rem; 
-    color:var(--light);
-    text-transform:uppercase;
-}
   h2 {
     color:var(--primary);
     font-weight:bold;
@@ -225,7 +218,7 @@ export const Spinner = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    height:80vh;
+    height:100vh;
 `;
 
 export const Footer = styled.footer`
