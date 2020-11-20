@@ -8,6 +8,7 @@ const Cases = ({data,options}) => {
   const recoveredRate = Object.values(recovered)
 
   const datas = {
+
     labels: casesDays,
     animation:true,
     datasets: [
@@ -27,10 +28,12 @@ const Cases = ({data,options}) => {
    }
 
 
-    return <Line data={datas} options={{...options, title: {
+    return (
+    <Line data={datas} options={{...options, title: {
       ...options.title,
       text:'Cases & Recovery'
-     }}} className="chart"/> 
+    }}} className="chart"/> 
+    )
     
 }
 

@@ -12,7 +12,7 @@ const Home = ({data, timeline, world,top}) => {
 }
 
 export default Home
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
 
   const [data, timeline, world,top ] = await Promise.all([
     fetch(`https://disease.sh/v3/covid-19/countries/philippines`).then(r => r.json()),
@@ -20,5 +20,5 @@ export async function getServerSideProps(context) {
     fetch(`https://disease.sh/v3/covid-19/all`).then(r => r.json()),
     fetch(`https://covid19-api-philippines.herokuapp.com/api/top-regions`).then(r => r.json()),
   ]);
-  return { props: { data, timeline, world,top } }
+  return { props: { data, timeline, world,top },revalidate: 1 }
 }

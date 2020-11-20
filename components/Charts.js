@@ -113,8 +113,7 @@ const Charts = ({timeline, philippines, world,top}) => {
             <span>Critical</span> 
             <p>{formatNumber(world.critical)}</p>
         </div>
-          </Summary>
-             
+          </Summary>         
             </div>
       </div>
         
