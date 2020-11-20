@@ -12,6 +12,24 @@
     --fg-loader:#dddfe2;
 
 }
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--fg-loader); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
 
 * {
     margin: 0;
