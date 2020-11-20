@@ -73,7 +73,9 @@ export const NavBar = styled.nav`
     align-items:center;
     padding:1rem;
     box-shadow: 0px 9px 10px -15px rgba(117,121,231,0.29);    
-        
+    @media screen and (max-width:300px) {
+             flex-direction:column;
+            }
     .logo {
         display:flex;
         justify-content:space-between;
@@ -93,12 +95,14 @@ export const NavBar = styled.nav`
         display:flex;
         justify-content:space-between;
         align-items:center;
+
+     
         img {
             margin:1rem;
             color:var(--primary);
             width:3rem; 
             
-            @media screen and (max-width:300px) {
+            @media screen and (max-width:400px) {
                 width:2.2rem !important; 
                 margin:.8rem !important;
             }
