@@ -147,7 +147,8 @@ export const Philippines = styled.section`
         padding:1rem;
 
         @media screen and (max-width:400px) {
-            h1 { font-size:2.5rem;  }
+            h1 { font-size:2.5rem !important;  }
+            h2 {font-size:1.2rem !important; }
         }
         h1 {
         font-size:3.5rem;

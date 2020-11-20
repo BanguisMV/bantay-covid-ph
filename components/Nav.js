@@ -10,13 +10,16 @@ const Nav = () => {
             </div>
             <div className='social-media'>
                 <a href="https://disease.sh/docs/#/" target='_blank'>
-                <img src="/disease.png" alt="Disease.sh Logo" />
+                <img src="/disease.png" alt="Disease.sh" />
                 </a>
                 <a href="https://www.instagram.com/slowstupidlearner/" target='_blank'>
-                <img src="/instagram.png" alt="Instagram Logo" />
+                <img src="/instagram.png" alt="Instagram" />
                 </a>
                 <a href="https://www.facebook.com/WarGodMarkey/" target='_blank'>
-                <img src="/fb.png" alt="Facebook Logo" />
+                <img src="/fb.png" alt="Facebook" />
+                </a>
+                <a href="https://www.facebook.com/WarGodMarkey/" target='_blank'>
+                <img src="/Github.png" alt="Github" />
                 </a>
             </div>
         </NavBar>
