@@ -24,6 +24,12 @@ const options = {
     mode: 'index',
     intersect: false
      },
+     title: {
+      display: true,
+      fontColor:'#7579e7',
+      fontSize:15,
+      position:'top'
+     },
      showLine: true
 }
 
@@ -35,12 +41,44 @@ const Charts = ({timeline, philippines, world,top}) => {
     return (
     <section>
       <div className="row">
+
             <div className="col-sm-12 col-md-12 col-lg-8">
               <Cases data={timeline} options={options}/>
               <Death data={timeline} options={options}/>
             </div>
 
             <div className="col-sm-12 col-md-12 col-lg-4"> 
+              <Summary>
+            <h2>Philippines</h2>
+            <div>
+              <span>Population</span> 
+              <p>{formatNumber(philippines.population)}</p>
+          </div>
+            <div>
+              <span>Tested</span> 
+              <p>{formatNumber(philippines.tests)}</p>
+          </div>
+            <div>
+              <span>Active</span> 
+              <p>{formatNumber(philippines.active)}</p>
+          </div>
+            <div>
+              <span>Critical</span> 
+              <p>{formatNumber(philippines.critical)}</p>
+          </div>
+            <div>
+              <span>Total Infected</span> 
+              <p>{formatNumber(philippines.cases)}</p>
+          </div>
+            <div>
+              <span>Total Deaths</span> 
+              <p>{formatNumber(philippines.deaths)}</p>
+          </div>
+            <div>
+            <span>Total Recovered</span> 
+            <p>{formatNumber(philippines.recovered)}</p>
+        </div> 
+          </Summary>
               <Summary>
             <h2>World</h2>
               <div>
@@ -76,37 +114,7 @@ const Charts = ({timeline, philippines, world,top}) => {
             <p>{formatNumber(world.critical)}</p>
         </div>
           </Summary>
-              <Summary>
-            <h2>Philippines</h2>
-            <div>
-              <span>Population</span> 
-              <p>{formatNumber(philippines.population)}</p>
-          </div>
-            <div>
-              <span>Tested</span> 
-              <p>{formatNumber(philippines.tests)}</p>
-          </div>
-            <div>
-              <span>Active</span> 
-              <p>{formatNumber(philippines.active)}</p>
-          </div>
-            <div>
-              <span>Critical</span> 
-              <p>{formatNumber(philippines.critical)}</p>
-          </div>
-            <div>
-              <span>Total Infected</span> 
-              <p>{formatNumber(philippines.cases)}</p>
-          </div>
-            <div>
-              <span>Total Deaths</span> 
-              <p>{formatNumber(philippines.deaths)}</p>
-          </div>
-            <div>
-            <span>Total Recovered</span> 
-            <p>{formatNumber(philippines.recovered)}</p>
-        </div> 
-          </Summary>
+             
             </div>
       </div>
         

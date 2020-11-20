@@ -20,7 +20,10 @@ const Death = ({data, options}) => {
       },
     ]
    }
-    return <Line data={datas} options={options} className="chart"/> 
+    return <Line data={datas} options={{...options, title: {
+      ...options.title,
+      text:'Deaths'
+     }}} className="chart"/> 
 
     
 }

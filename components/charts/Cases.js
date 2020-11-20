@@ -17,7 +17,6 @@ const Cases = ({data,options}) => {
         backgroundColor: '#0038a880',
         borderWidth: 3,
       },
-
       {
         label: 'Recovered',
         data:recoveredRate,
@@ -28,7 +27,10 @@ const Cases = ({data,options}) => {
    }
 
 
-    return <Line data={datas} options={options} className="chart"/> 
+    return <Line data={datas} options={{...options, title: {
+      ...options.title,
+      text:'Cases & Recovery'
+     }}} className="chart"/> 
     
 }
 

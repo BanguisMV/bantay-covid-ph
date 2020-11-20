@@ -42,7 +42,7 @@ const MyApp = ({ Component, pageProps }) => {
     <Fragment>
      <NextSeo
       title="Bantay COVID"
-      description="My simple Next JS app using chart.js and disease.sh API"
+      description="A simple COVID Tracker APP statically served using NextJS & powered by disease.sh API for Philippine Data."
       openGraph={SEO}
     />
     { loading ? 
