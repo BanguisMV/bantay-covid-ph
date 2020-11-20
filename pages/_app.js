@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Nav from '../components/Nav';
-import { Container, Spinner } from '../components/styled/root'
+import { Container, Spinner, Footer } from '../components/styled/root'
 import '../styles/global.css'
 import '../styles/bootstrap-grid.min.css'
 import { NextSeo } from 'next-seo';
@@ -53,6 +53,9 @@ const MyApp = ({ Component, pageProps }) => {
           <Component {...pageProps} /> 
         }
       </Container>
+      <Footer  className='footer'>
+       <a href="https://github.com/BanguisMV" target='_blank'> &copy;  BanguisMV </a>
+      </Footer >
     </>
   
   )

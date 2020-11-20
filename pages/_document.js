@@ -10,10 +10,9 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head> 
-            <link rel="apple-touch-icon" href="%PUBLIC_URL%/no-virus.png" />
-            <link rel="icon" href="%PUBLIC_URL%/no-virus.png" />
+            <link rel="shortcut icon" href="/no-virus.png" />
+            <link rel="apple-touch-icon" href="/no-virus.png" />
             <meta name="theme-color" content="#7579e7" />
-            <title>Bantay COVID</title>
         </Head>
         <body>
           <Main />
