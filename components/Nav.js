@@ -18,7 +18,7 @@ const Nav = () => {
                 <a href="https://www.facebook.com/WarGodMarkey/" target='_blank'>
                 <img src="/fb.png" alt="Facebook" />
                 </a>
-                <a href="https://www.facebook.com/WarGodMarkey/" target='_blank'>
+                <a href="https://github.com/BanguisMV" target='_blank'>
                 <img src="/Github.png" alt="Github" />
                 </a>
             </div>
