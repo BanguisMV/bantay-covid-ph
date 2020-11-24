@@ -7,26 +7,26 @@ import { NextSeo } from 'next-seo';
 
 const SEO = {
   type:'website',
-  url: 'https://covid.banguismv.wtf/',
+  url: 'https://bantay-covid-ph.vercel.app/',
   title: 'Bantay COVID',
   site_name: 'Bantay COVID',
-  canonical: 'https://covid.banguismv.wtf/',
+  canonical: 'https://bantay-covid-ph.vercel.app/',
     images: [
         {
-            url: 'https://covid.banguismv.wtf/free.jpg',
+            url: 'https://bantay-covid-ph.vercel.app/free.jpg',
             alt: 'Bantay COVID',
           },
           {
-            url: 'https://covid.banguismv.wtf/free.jpg',
+            url: 'https://bantay-covid-ph.vercel.app/free.jpg',
             alt: 'Bantay COVID',
           },
-          { url: 'https://covid.banguismv.wtf/free.jpg' },
-          { url: 'https://covid.banguismv.wtf/free.jpg' },
+          { url: 'https://bantay-covid-ph.vercel.app/free.jpg' },
+          { url: 'https://bantay-covid-ph.vercel.app/free.jpg' },
     ],
       twitter: {
         handle: '@handle',
         site: 'https://covid.banguismv.wtf',
-        cardType: 'https://covid.banguismv.wtf/free.jpg',
+        cardType: 'https://bantay-covid-ph.vercel.app/free.jpg',
   }
 }
 
