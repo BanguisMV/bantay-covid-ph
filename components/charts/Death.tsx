@@ -1,8 +1,6 @@
 import { Line } from 'react-chartjs-2'
-import styled from 'styled-components'
 
-
-const Death = ({data, options}) => {
+const Death = ({ data, options }) => {
     
   const { deaths } = data.timeline
   const deathDays = Object.keys(deaths)
@@ -10,7 +8,7 @@ const Death = ({data, options}) => {
 
   const datas = {
     labels: deathDays,
-    animation:true,
+    animation: true,
     datasets: [
       {
         data:deathRate,
@@ -23,7 +21,7 @@ const Death = ({data, options}) => {
     return <Line data={datas} options={{...options, title: {
       ...options.title,
       text:'Deaths'
-     }}} className="chart"/> 
+     }}} /> 
 
     
 }

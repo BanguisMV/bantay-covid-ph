@@ -4,7 +4,7 @@ import useMedia from 'use-media';
 
 import { Summary, Table } from './styled/root';
 
-const formatNumber = num => num && num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+const formatNumber= (num: number) => num && num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
 
 const Cases = dynamic(() => import('./charts/Cases'))
 const Death = dynamic(() => import('./charts/Death'))
@@ -35,8 +35,9 @@ const options = {
 
 
 
-const Charts = ({timeline, philippines, world,top}) => {
-  const isOpen = useMedia({minWidth: '425px'});
+const Charts = ({ timeline, philippines, world, top }) => {
+
+  const isOpen:boolean = useMedia({minWidth: '425px'});
 
     return (
     <section>

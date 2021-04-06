@@ -32,7 +32,7 @@ const Cases = ({data,options}) => {
     <Line data={datas} options={{...options, title: {
       ...options.title,
       text:'Cases & Recovery'
-    }}} className="chart"/> 
+    }}}/> 
     )
     
 }

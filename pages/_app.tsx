@@ -32,12 +32,17 @@ const SEO = {
 
 
 const MyApp = ({ Component, pageProps }) => {
- const [loading, setLoading] = useState(true)
+
+
+ const [loading, setLoading] = useState<boolean>(true)
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
     },800)
   },[])
+
+  
   return (
     <Fragment>
      <NextSeo
